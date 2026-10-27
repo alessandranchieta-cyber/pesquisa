@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <p>Você está sendo direcionado para o formulário...</p>
+
+    <script>
+        const formularios = [
+            "https://docs.google.com/forms/d/e/1FAIpQLScXfaN1-49xAFA39wZm5oQP5iQOojzonp9Ucyfzqyq32lvxLw/viewform?usp=dialog",
+            "https://docs.google.com/forms/d/e/1FAIpQLSdueSwUdWQyFzvWDl6oJEPQbR9_pImDA15kMtIV_2PJfwXzyA/viewform?usp=publish-editor"
+        ];
+
+        const sorteio = Math.floor(Math.random() * 2);
+
+        window.location.replace(formularios[sorteio]);
+    </script>
+</body>
+</html>
